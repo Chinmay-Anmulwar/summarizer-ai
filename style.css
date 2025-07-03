@@ -1,54 +1,56 @@
-/* Reset & Global Styles */
+/* Reset & Font */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+/* Body and Layout */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fefdfb;
-  color: #2d3748;
+  background-color: #fdfaf4; /* cream white */
+  color: #333;
   height: 100vh;
   overflow: hidden;
 }
 
-/* Layout Grid */
 .layout {
   display: flex;
   height: 100vh;
 }
 
-/* Sidebar Styles */
+/* Sidebar */
 .sidebar {
   width: 220px;
-  background-color: #f4f4f4;
+  background-color: #fbf7ef;
   padding: 20px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #e4dccc;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.03);
 }
 
 .sidebar h2 {
   font-size: 1.4rem;
   margin-bottom: 20px;
-  color: #2c5282;
+  color: #4a4a4a;
 }
 
 .sidebar button {
   padding: 10px;
-  background-color: #fff;
+  background-color: #fffaf0;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 0.95rem;
   text-align: left;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
+  color: #333;
 }
 
 .sidebar button:hover {
-  background-color: #e2e8f0;
+  background-color: #f5ecdd;
 }
 
 /* Main Content */
@@ -65,8 +67,9 @@ body {
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
+  color: #333;
 }
 
 header p {
@@ -91,8 +94,8 @@ header p {
 }
 
 .chat.bot {
-  background-color: #edf2f7;
-  color: #2d3748;
+  background-color: #f8f5f0;
+  color: #333;
   align-self: flex-start;
   border-top-left-radius: 0;
 }
@@ -109,25 +112,31 @@ header p {
 
 .input-area input[type="file"] {
   padding: 10px;
-  background-color: #f1f1f1;
+  background-color: #fffaf0;
   border: 1px solid #ccc;
   border-radius: 8px;
   flex: 1;
   font-size: 0.95rem;
   min-width: 220px;
+  color: #333;
+}
+
+.input-area input[type="file"]:hover {
+  background-color: #fcf5e8;
+  border-color: #c2b59b;
 }
 
 .input-area button {
   padding: 10px 24px;
   font-size: 1rem;
-  background-color: #2b6cb0;
+  background-color: #c8a96b;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .input-area button:hover {
-  background-color: #1e4e8c;
+  background-color: #b8904a;
 }
