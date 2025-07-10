@@ -7,33 +7,56 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Toggle Button -->
+  <button id="menuToggle" class="menu-toggle">☰</button>
+
   <div class="layout">
     <!-- Sidebar -->
-    <aside class="sidebar">
-      <h2> AI Chat</h2>
-      <button> New Chat</button>
-      <button> History</button>
-      <button> Settings</button>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2>📄 AI Chat</h2>
+        <button class="close-btn" id="closeSidebar">✖</button>
+      </div>
+      <button>➕ New Chat</button>
+      <button>🕘 History</button>
+      <button>⚙️ Settings</button>
     </aside>
 
     <!-- Main Content -->
     <main class="main-content">
       <header>
-        <h1> Summarizer AI Agent</h1>
+        <h1>📄 Summarizer AI Agent</h1>
         <p>Upload your PDF or Word document and receive a smart summary!</p>
       </header>
 
-      <!-- Chat UI -->
       <section class="chat-section">
+        <div class="chat bot">
         
+        </div>
       </section>
 
-      <!-- Upload Input -->
       <form class="input-area">
         <input type="file" accept=".pdf,.doc,.docx" required />
         <button type="submit">Send</button>
       </form>
     </main>
   </div>
+
+  <!-- JavaScript -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const closeBtn = document.getElementById('closeSidebar');
+
+    menuToggle.onclick = () => {
+      sidebar.classList.add('sidebar-open');
+      menuToggle.style.display = 'none';
+    };
+
+    closeBtn.onclick = () => {
+      sidebar.classList.remove('sidebar-open');
+      menuToggle.style.display = 'block';
+    };
+  </script>
 </body>
 </html>
