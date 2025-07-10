@@ -140,3 +140,65 @@ header p {
 .input-area button:hover {
   background-color: #b8904a;
 }
+
+/* Menu Toggle Button */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  background-color: #c8a96b;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-toggle:hover {
+  background-color: #c8a96b;
+}
+
+/* Sidebar by Default */
+.sidebar {
+  width: 220px;
+  background-color: #fffaf0;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+/* Sidebar Opened */
+.sidebar.sidebar-open {
+  left: 0;
+}
+
+/* Sidebar Header with Close Button */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  font-size: 22px;
+  cursor: pointer;
+  background-color: #f5e9d5;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* Push main content to the side if needed (optional) */
+.main-content {
+  margin-left: 0;
+  padding: 40px 30px;
+}
