@@ -202,3 +202,47 @@ header p {
   margin-left: 0;
   padding: 40px 30px;
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+    padding: 15px;
+  }
+
+  .sidebar.sidebar-open {
+    left: 0;
+  }
+
+  .sidebar h2 {
+    font-size: 1.1rem;
+  }
+
+  .sidebar button {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .menu-toggle {
+    top: 12px;
+    left: 12px;
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  .close-btn {
+    font-size: 18px;
+    padding: 4px 6px;
+  }
+
+  .main-content {
+    padding: 20px 15px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+}
